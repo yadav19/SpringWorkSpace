@@ -1,5 +1,6 @@
 package com.CryptoExchange.Conversionservice
 
+import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
@@ -8,4 +9,7 @@ class ConversionServiceApplication
 
 fun main(args: Array<String>) {
 	runApplication<ConversionServiceApplication>(*args)
+
 }
+
+
