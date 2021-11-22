@@ -15,7 +15,10 @@ class TradeController (private var restTemplate: RestTemplate){
         lateinit var status: String
         var rate: Float = 0.0f
     }
-
+    @GetMapping("home")
+    fun nothingComesUp(): String{
+        return "came here"
+    }
     @GetMapping("/trade/{from}/{too}/{quantity}")
     fun getTrading(
         @PathVariable from: String,
