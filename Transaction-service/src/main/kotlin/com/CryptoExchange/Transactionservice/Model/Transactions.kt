@@ -10,7 +10,6 @@ import javax.persistence.Id
 @Entity
 data class Transactions(
     @Id
-    @Generated
     var t_id: Int,
     @Column(name = "fromCur")
     var from: String,

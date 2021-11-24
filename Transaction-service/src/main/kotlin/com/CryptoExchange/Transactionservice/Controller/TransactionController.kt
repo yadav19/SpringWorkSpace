@@ -43,7 +43,7 @@ class TransactionController(private var transactionsRepo: TransactionsRepository
       }
         else
       {
-            var tmp: Transactions = Transactions(from = from, to = to, total = quantity*rate, t_id = 0)
+            var tmp: Transactions = Transactions(from = from, to = to, total = quantity*rate,t_id = transactionsRepo.findAll().size)
             transactionsRepo.save(tmp)
             var ret = object {
                 val status: String = "Success"
